@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Select options widget for form-style realms.
+ */
+
+/**
+ * Implements hook_facetapi_widgets().
+ */
+function facetapi_select_widget_facetapi_widgets() {
+  return array(
+    'facetapi_select_options' => array(
+      'handler' => array(
+        'label' => t('Select options'),
+        'class' => 'FacetapiWidgetSelectOptions',
+        'query types' => array('term', 'date', 'numeric_group', 'numeric_range'),
+        'requirements' => ['facetapi_requirement_realm_property' => ['element type' => 'options']],
+      ),
+    ),
+  );
+}

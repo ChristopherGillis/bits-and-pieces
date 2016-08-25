@@ -1,0 +1,8 @@
+name = Facet API Select Widget
+description = Select options widget for form-style realms.
+core = 7.x
+package = Search Toolkit
+
+dependencies[] = facetapi
+
+files[] = plugins/facetapi_widgets/FacetapiWidgetSelectOptions.inc
